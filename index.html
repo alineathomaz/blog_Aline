@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	  <title> Blog </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Aline Takai</a>
+      </div>
+    
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#viagem">Viagem</a></li>
+          <li><a href="#vilmes">Filmes</a></li>
+          <li><a href="#books">Livros</a></li>
+          <li><a href="#contact">Sobre mim</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  
+    <div class="container">
+
+	    <h2 class="page-header"id="viagem">Lugares que você tem que conhecer</h2>
+
+      <center>
+
+  		  <div class="viagem_mainDiv"> 
+
+  			  <img src="porks.jpg">
+  			  <h4 class="text-capitalize"><kbd> Porks - Porco & Chope </kbd></h4>  			
+  			  <hr>
+  			  <h5 class="text-success text-capitalize">Eu visitei em novembro de 2019</h5>
+  			  <p class="text-muted">
+            Um pequeno bar/lanchonete que tem várias unidades em BH e é bem aconchegante.  
+            A especialidade da casa são os pratos feitos à base de carne de porco e o chope.
+            Tem um bom menu e bons preços. A comida é deliciosa, as porções são bem generosas e 
+            alguns pratos servem até duas pessoas. Quando tem som ao vivo aparece um grande público moderno 
+            e estiloso, nesses dias é melhor chegar cedo pra conseguir uma mesa! 
+            Nos outros dias é basicamente só chegar e se deliciar. 
+          </p>
+  		
+        </div>
+
+  	  </center>
+
+      <br><br>
+
+  	  <center>
+  		
+        <div  class="viagem_mainDiv">
+
+  			  <img src="parque.jpg">
+  			  <h4 class="text-capitalize"><kbd> Parque Municipal de BH </kbd></h4>  			
+  			  <hr>
+  			  <h5 class="text-success text-capitalize"> Eu visitei em março de 2023 </h5>
+  			  <p class="text-muted"> 
+            É um lugar maravilhoso. Você não pode deixar de ir. Fazer o passeio vai fazer com que você 
+            se encante por esse local turístico no centro de BH. É um parque municipal bem preservado 
+            com bastante área verde, para recreação, lanchonetes e um laguinho. É um ótimo lugar para visitar. 
+          </p>
+  		
+        </div>
+  	
+      </center>
+
+      <!-- heading para a seção Filmes → a class bootstrap page-header adiciona padding-bottom: 9px,
+      margin:40px 0 20px, border-bottom: 1px solid #eee || a id que quando o item filmes do menu
+      for clicado a tela se redirecione para esse elemento -->
+      <h2 class="page-header" id="filmes">Crítica de Filmes</h2>
+
+      <!-- Essa div possui:
+      - class bootstrap bg-primary (adiciona a cor white e o background-color blue),
+      - filmesHead é uma marcação para o CSS, 
+      - data-toggle="collapse" indica a tag div que algo será aberto quando a div for clicada, 
+      - data-target="#Vingadores_GuerraInfinita" indica a tag que quando a div for clicada, essa id deve abrir -->
+      <div class="bg-primary filmesHead" data-toggle="collapse" data-target="#Vingadores_GuerraInfinita">
+    
+        <!-- class bootstrap glyphicon glyphicon-film para obter o ícone dos filmes -->
+        <span class="glyphicon glyphicon-film"></span> Vingadores Guerra Infinita <i class="fa fa-sort-desc"></i>
+  
+      </div>
+
+      <!-- essa div vai mostrar o conteúdo da crítica do filme || class="collapse" serve para esconder o 
+      conteúdo da div, a não ser que alguém clique na div data-target="#Vingadores_GuerraInfinita" -->
+      <div id="Vingadores_GuerraInfinita" class="collapse">
+
+	      <div class="filmesText" >
+        
+          <!--contém a imagem do filme || img-responsive tornará a imagem responsiva e img-thumbnail faz
+          com que a imagem vire um pequeno ícone ou miniatura, alterando sua padding e borda-->
+          <img src="movie1.jpeg"class="img-responsive img-thumbnail"> 
+
+          <!-- contém o título da crítica do filme || text-success tornará o texto verde e text-captalize
+          torna maiúscula a primeira letra de cada palavra -->
+		      <h5 class="text-success text-capitalize">Exelente filme para completar a história da Marvel 
+            <!-- avaliação do filme em estrelas cada tag span é uma estrela. A class glyphicon glyphicon-star
+            importa e adiciona automaticamente o ícone de estrela-->
+            <span class="glyphicon glyphicon-star" ></span>
+            <span class="glyphicon glyphicon-star" ></span>
+            <span class="glyphicon glyphicon-star" ></span>
+            <span class="glyphicon glyphicon-star" ></span>
+            <span class="glyphicon glyphicon-star" ></span>
+            <!-- DICA: O Bootstrap contém ícones embutidos, emoticons e animações. Precisamos somente 
+              nomeá-los e colocá-los no elemento HTML. Não precisamos importar ou utilizar imagens, nesse caso. 
+              Por isso, desenvolvedores preferem utilizar bootstrap, já que economiza bastante tempo-->
+          </h5>
+		  
+          <!--crítica do filme (pode colocar uma frase simples aqui e depois incrementar!)-->
+          <p> Assisti hoje e adorei. Você tem que estar por dentro da história, senão vai perder boa parte da 
+            diversão. A sequência certa para assistir é: a Guerra infinita, Guerra civil, Pantera negra, A era 
+            de Ultron, Homem formiga e a vespa antes de assistir Vingadores: Ultimato. 
+            O filme tem várias homenagens a outros filmes da Marvel. Você vai gostar bastante. 
+            Logo no começo do filme tem cenas incríveis. O filme é baseado na série de ação mais comentada e 
+            cheia de ação.O filme conta como os vingadores se juntaram mais uma vez para reverter as ações de 
+            Thanos e trazer paz para o universo. O filme é extenso, mas são três horas que valem muito a pena.
+          </p>
+	  
+        </div>  
+  
+      </div>
+
+      <div class="bg-primary filmesHead" data-toggle="collapse" data-target="#O_rei_leão" >
+    
+        <span class="glyphicon glyphicon-film" ></span> O rei leão<i class="fa fa-sort-desc" ></i>
+  
+      </div>
+
+      <div id="O_rei_leão" class="collapse">
+  
+        <div class="filmesText">
+       
+          <img src="movie2.jpg"class="img-responsive img-thumbnail">
+
+	        <h5 class="text-success text-capitalize">Ótimo para se ver uma vez
+            <span class="glyphicon glyphicon-star" ></span>
+            <span class="glyphicon glyphicon-star" ></span>
+            <span class="glyphicon glyphicon-star" ></span>
+          </h5>
+	   
+          <p> É um filme adorável. O filme conta a história de um príncipe leão, que depois da morte do seu pai, 
+            sai em busca do verdadeiro significado de responsabilidade e coragem. 
+            Vale muito a pena a ver pelos seus efeitos visuais e cinematográficos.
+            A Beyoncé realmente deu vida a Nala, mas Timão e Pumba foram quem roubaram os holofotes.
+          </p>
+  	
+        </div>
+  
+      </div>
+  
+      <h2 class="page-header" id="livros">Lista de livros</h2>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 book">
+      
+        <img src="s1.jpg" class="img-responsive">
+        <hr>
+        <a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_6?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-6">First Space Encyclopaedia</a>
+  
+      </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 book">
+    
+      <img src="s2.jpg" class="img-responsive">
+      <hr>
+      <a href="https://www.amazon.in/Moon-Picture-Puffins-Anastasia-Suen/dp/0140565981/ref=sr_1_2_sspa?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-2-spons&psc=1&smid=A3H3WE9M6NY1KV&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTVBPRUUyMlg5TU9XJmVuY3J5cHRlZElkPUEwMjUyOTM3MU9XVklaVFdUMk9GUSZlbmNyeXB0ZWRBZElkPUEwNDAwNTE1T1JZSVhWWDM3NTlMJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Man on the Moon (Picture Puffins)</a>
+  
+    </div>    
+
+    <section id="contact">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16012.629075210061!2d-43.99757899376888!3d-19.9120327683819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6bfd3b7ffffff%3A0xa0030da6bf4ccee9!2sCursos%20PSIDE!5e0!3m2!1spt-BR!2sbr!4v1683727731380!5m2!1spt-BR!2sbr" 
+      width="1200" height="450" frameborder="0" allowfullscreen="100"></iframe>
+      <hr>
+      <img src="eu.jpg" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+      <h3>Aline Takai</h3>
+
+      <div class="contato_1" >
+
+        <a href="mailto:alinearaujothomaz@gmail.com?Subject=Olá">
+          <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;alinearaujothomaz@gmail.com</h5>
+        </a> 
+
+        <a href="https://www.instagram.com/cursospside/"> 
+          <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;@cursospside</h5>
+        </a> 
+    
+      </div>
+
+    </section>
+
+  </body>
+
+</html>
